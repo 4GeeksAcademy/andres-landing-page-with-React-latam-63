@@ -12,7 +12,7 @@ const Home = () => {
 	return (
 		<div className="flex-container">
 			<Navbar />
-			<div className="container">
+			<div className="flex-container ps-5 pe-5">
 				<Jumbotron />
 				<MultipleCards />
 			</div>
@@ -20,6 +20,5 @@ const Home = () => {
 		</div>
 	);
 };
-
 export default Home;
 
