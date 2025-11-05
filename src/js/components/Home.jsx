@@ -12,10 +12,8 @@ const Home = () => {
 	return (
 		<div className="flex-container">
 			<Navbar />
-			<div className="flex-container ps-5 pe-5">
-				<Jumbotron />
-				<MultipleCards />
-			</div>
+			<Jumbotron />
+			<MultipleCards />
 			<Footer />
 		</div>
 	);

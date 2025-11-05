@@ -27,14 +27,16 @@ let cardInfo = [
 
 const MultipleCards = () => {
     return (
-        <div className='row g-2'>
-            {
-                cardInfo.map((item) => {
-                    return (
-                        <Card info={item} />
-                    )
-                })
-            }
+        <div className="flex-container ps-5 pe-5">
+            <div className='row g-2'>
+                {
+                    cardInfo.map((item) => {
+                        return (
+                            <Card info={item} />
+                        )
+                    })
+                }
+            </div>
         </div>
     )
 }
