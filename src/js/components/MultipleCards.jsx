@@ -22,7 +22,8 @@ let cardInfo = [
         Title: 'Perro confundido',
         Description: 'Lorem ipsum dolor sit amet consectetur adipiscing elit. Amet consectetur adipiscing elit quisque faucibus ex sapien. Quisque faucibus ex sapien vitae pellentesque sem placerat. Vitae pellentesque sem placerat in id cursus mi.',
         Button: 'Goodbye',
-    }
+    },
+
 ];
 
 const MultipleCards = () => {
@@ -30,9 +31,9 @@ const MultipleCards = () => {
         <div className="flex-container ps-5 pe-5">
             <div className='row g-2'>
                 {
-                    cardInfo.map((item) => {
+                    cardInfo.map((item, index) => {
                         return (
-                            <Card info={item} />
+                            <Card key={index} info={item} />
                         )
                     })
                 }

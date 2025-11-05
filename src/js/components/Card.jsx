@@ -9,7 +9,7 @@ const Card = (props) => {
                     <h2 className="card-title">{props.info.Title}</h2>
                     <p className="card-text">{props.info.Description}</p>
                 </div>
-                <div className='bg-light p-2 rounded-bottom'>
+                <div className='bg-light p-2 rounded-bottom border-top'>
                     <a href="#" className="btn btn-primary">{props.info.Button}</a>
                 </div>
             </div>
